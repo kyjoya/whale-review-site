@@ -1,0 +1,14 @@
+
+<h1>Whales</h1>
+
+
+    <% @whales.each do |whale| %>
+      <ul>
+        <li><%= whale.name %></li>
+        <li><%= link_to 'Show', whale %></li>
+      </ul>
+    <% end %>
+
+<br>
+
+<%= button_to 'Create Report', report_path, method: :post%>
